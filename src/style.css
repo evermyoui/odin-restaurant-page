@@ -1,0 +1,38 @@
+
+:root {
+    --torquise: #212c28;
+    --dark-grey: #0f0e0e;
+    --grey-orange: #c29c3d;
+    --orange: #ffbb59;
+    --white: #ffffff;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background-color: var(--torquise);
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 30px;
+}
+.navBtn {
+    padding: 5px 20px;
+    border: none;
+    color: var(--grey-orange);
+    background-color: var(--dark-grey);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.navBtn:hover {
+    background-color: var(--white);
+}

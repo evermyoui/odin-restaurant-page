@@ -7,11 +7,6 @@ export default function homeDisplay(){
     const p = document.createElement("p");
     p.textContent = `A restaurant dedicated to a beloved one`;
 
-    const a = document.createElement("a");
-    a.href = `./menu.html`;
-    a.textContent = `MENU`;
-
     contentId.appendChild(h1);
     contentId.appendChild(p);
-    contentId.appendChild(a);
 }
