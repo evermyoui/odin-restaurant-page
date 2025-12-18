@@ -15,24 +15,46 @@
 }
 body {
     height: 100vh;
-    background-color: var(--torquise);
+    background-image: url(./imgs/home.png);
 }
 
 nav {
     display: flex;
-    gap: 10px;
+    gap: 50px;
     justify-content: center;
-    margin: 30px;
+    padding: 30px;
 }
 .navBtn {
+    font-size: 50px;
     padding: 5px 20px;
     border: none;
     color: var(--grey-orange);
-    background-color: var(--dark-grey);
-    border-radius: 5px;
+    background-color: transparent;
+    border-radius: 15px;
     cursor: pointer;
     transition: all 0.5s;
 }
 .navBtn:hover {
-    background-color: var(--white);
+    background-color: var(--torquise);
+}
+
+.h1Div{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+}
+.h1Div > h1 {
+    font-size: 150px;
+    color: var(--grey-orange);
+    font-weight: lighter;
+}
+.h1Div > p {
+    color: white;
+    padding: 30px 0px;
+}
+#content {
+    background-color: rgba(33, 44, 40, 0.5);
 }

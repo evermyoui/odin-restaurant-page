@@ -1,5 +1,6 @@
-import homeDisplay from "./template.js"
+import homeDisplay from "./template.js";
+import "./style.css";
 
 const homeBtn = document.querySelector("#home");
 
-homeDisplay();
+homeBtn.addEventListener("click", homeDisplay);

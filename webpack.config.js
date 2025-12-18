@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { userInfo } = require("os");
 
 module.exports = {
     mode: "development",
@@ -19,4 +20,12 @@ module.exports = {
             title: "My Restaurant",
         }),
     ],
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    },
 };
