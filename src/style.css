@@ -154,3 +154,11 @@ nav {
 a {
     text-decoration: none;
 }
+.github {
+    display: flex;
+}
+h1 {
+    color: var(--orange);
+    padding: 10px 20px;
+    cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import homeDisplay from "./template.js";
 import Menu from "./menu.js";
+import aboutDisplay from "./about.js";
 
 import "./style.css";
 
@@ -9,7 +10,9 @@ homeDisplay();
 
 const homeBtn = document.querySelector("#home");
 const menuBtn = document.querySelector("#menu");
+const aboutBtn = document.querySelector("#about");
 const contentId = document.querySelector("#content");
+const h1 = document.querySelector("h1");
 
 let currentMenu = 0;
 
@@ -40,3 +43,5 @@ contentId.addEventListener("click", (e)=> {
         menu[currentMenu].menuDisplay();
     }
 });
+aboutBtn.addEventListener("click", aboutDisplay);
+h1.addEventListener("click", homeDisplay);
